@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="results.html" method="get" enctype="multipart/form-data">
+<label for="fname">First Name:</label> 
+<input name="name" type="text" id="fname" maxlength="12" placeholder="first Name" required>
+<br />
+<label for="lname">Last Name:</label>
+<input type="text" id="lname" placeholder="LastName" required>
+<br />
+<br />
+<label for="password">password:</label>
+<input type="password"  name="password" id="password" placeholder="password" required>
+<br />
+<br />
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="someone@gmail.com"  required>
+<br />
+<br>
+<label for="age">Age: </label>
+<input type="number" name="age" required placeholder="age">
+<div>
+    <label for="date">Date</label>
+    <input type="date" id="date" max="23" min="1" placeholder="Date">
+</div>
+<div>
+    Favorite food
+    <label for="banana">Banana</label>
+    <input type="checkbox" name="banana" id="banana">
+    <label for="apple">Apple</label>
+    <input type="checkbox" name="apple" id="apple">
+</div>
+<div>
+Gender
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male">
+<label for="female">Female</label>
+<input type="radio" name="gender" id="female">
+
+</div>
+<div>
+    <label for="eyeColor">
+Eye Color
+    </label>
+    <select name="eyeColor" id="eyeColor" multiple>
+        <option value="Green">Green</option>
+        <option label="Red" value="Red"></option>
+    </select>
+</div>
+<div>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="bio"></textarea>
+</div>
+<div>
+    <label for="file">Attache Files</label>
+    <input type="file" name="file" id="file">
+</div>
+<div >
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+</div>
+<div>
+    <label for="url">URL: </label>
+    <input type="url" name="url" id="url">
+</div>
+<div>
+    <label for="color">Color: </label>
+    <input type="color" name="color" id="color">
+</div>
+
+<button type="submit">Submite</button>
+
+<button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
